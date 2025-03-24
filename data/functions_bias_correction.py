@@ -17,7 +17,7 @@ from scipy.stats import gamma, norm
 from scipy.optimize import curve_fit, root
 from scipy import stats
 
-def eqm(o, p, s, precip=True, pr_threshold=0.1, n_quantiles=None, extrapolation='constant'):
+def eqm(o, p, s, precip, n_quantiles=None, extrapolation='constant'):
     o = o[~np.isnan(o)]
     p = p[~np.isnan(p)]
     s = s[~np.isnan(s)]
